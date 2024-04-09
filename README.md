@@ -57,13 +57,9 @@ Para facilitar: implemente ler todos emprestimos, inserir e deletar um emprestim
 
 ## Etapa 1: Modelagem de Dados
 
-### 1.1: Modelagem Relacional
-Crie um modelo relacional para o sistema, considerando as entidades: `Usuário`, `Bicicleta`, `Empréstimo` e `Histórico de Empréstimos`. 
-
-### 1.2: Modelagem NoSQL
-Transponha o modelo relacional para dois possíveis modelos no MongoDB:
-- Um utilizando _embedding_
-- Outro utilizando _referencing_
+### 1.1: Modelagem NoSQL
+Crie a relação entre os documentos utilizando relação por embeeding documents no MongoDB.
+- Utilize _embedding_ document para criar a relação entre os documentos: https://www.mongodb.com/basics/embedded-mongodb
 
 ## Etapa 2: Configuração do MongoDB
 
@@ -88,13 +84,16 @@ Utilize o MongoDB Compass para inserir alguns registros nas collections criadas.
 Antes de iniciar o desenvolvimento, crie um ambiente virtual para manter as dependências do projeto isoladas. Em seguida, instale o Flask e o PyMongo.
 
 ```bash
-pip install Flask pymongo
+pip install Flask
+pip install pymongo
+pip install Flask-PyMongo
 ```
 
 ### 3.2: Conexão com MongoDB 
 
 Para referência: 
 - https://www.w3schools.com/python/python_mongodb_find.asp
+- https://flask-pymongo.readthedocs.io/en/latest/
 - https://pymongo.readthedocs.io/en/stable/tutorial.html
 
 
